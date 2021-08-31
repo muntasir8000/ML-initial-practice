@@ -1,18 +1,10 @@
-#####################################
-#      Intro to ML Traning - R      #
-# Please come back for updated file #
-#####################################
-
-# Script 1 - Video 5
-
 # Set the working directory
 
 setwd("~/datasets/titanic")
 
 # Import the training set: train
-# Your working directory might vary
 
-# from web content
+# source is from the following link
 # train <- read.csv('https://raw.githubusercontent.com/raqueeb/mltraining/master/ML-workbook/train.csv')
 train <- read.csv("~/datasets/titanic/train.csv")
 
@@ -37,7 +29,6 @@ test
 
 View(test)
 
-# Let's do some exploratory data analysis
 # How many people in your training set survived?
 
 table(train$Survived) 
@@ -50,7 +41,6 @@ prop.table(table(train$Survived))
 
 table(train$Sex, train$Survived)
 
-# If you want to access a single column in the dataframe use $ after the dataframe
 # If you want to know what is the fate of the people in the train dataset?
 
 table(train$Survived)
